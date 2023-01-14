@@ -98,6 +98,7 @@
           <div
             style="
               overflow: auto !important;
+              overflow-y: scroll;
               width: 40%;
               margin-left: auto;
               margin-right: auto;
@@ -120,7 +121,7 @@
               </thead>
               <tbody>
                 <tr
-                  v-for="(row, rowKey) in content.data"
+                  v-for="(row, rowKey) in content.data.slice(0, 10)"
                   v-bind:key="'row-' + rowKey"
                 >
                   <td
