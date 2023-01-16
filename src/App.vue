@@ -222,9 +222,6 @@ export default {
         );
         values[i]["latitude"] = response.data.candidates[0].location.y;
         values[i]["longitude"] = response.data.candidates[0].location.x;
-
-        console.log(response.data.candidates[0].location.x);
-        console.log(response.data.candidates[0].location.y);
       }
       console.log(values);
 
